@@ -1,0 +1,473 @@
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: local('Gilroy-Bold'), url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: local('Gilroy-Medium'), url('../fonts/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Regular'), url('../fonts/Gilroy-Regular.woff') format('woff');
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* HomePages se trouvant dans le fichier HomePages.js, dossier pages */
+.HomeContainer {
+    display: flex;
+    padding: 0;
+}
+
+.HomeGauche {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #ccc;
+}
+
+.HomeDroite {
+    align-items: center;
+    padding-top: 4%;
+}
+
+.ComposantHomeDroite {
+    padding-left: 8%;
+}
+
+/* Logo.js, se trouvant dans le fichier Logo.js du dossier pages */
+.LogoContainer {
+    position: relative;
+    padding: 20px;
+}
+
+.LogoContainer::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logoDiv {
+    display: flex;
+}
+
+.logoImg {
+    height: 25%;
+    width: 25%;
+}
+
+/* Components, dans le fichier Components.js du dossier pages */
+.ComponentsContainer {
+    padding: 20px;
+}
+
+.myTemplatesContainer {
+    display: flex;
+    align-items: center;
+}
+
+.myTemplatesContainer p {
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.templatesIcons {
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+}
+
+.mySearchContainer {
+    align-items: center;
+    padding-left: 30px;
+}
+
+.mySearchContainer p {
+    font-size: 13px;
+    font-family: 'Gilroy-Medium', sans-serif;
+    line-height: 20px;
+}
+
+.myPastContainer {
+    display: flex;
+    align-items: center;
+}
+
+.myPastContainer p {
+    margin: 4px;
+    font-size: 13px;
+    font-family: 'Gilroy-Medium', sans-serif;
+    line-height: 20px;
+}
+
+.myBoardContainer {
+    display: flex;
+    align-items: center;
+}
+
+.myBoardContainer p {
+    font-size: 13px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    line-height: 20px;
+}
+
+/* Le footer gauche, dans le ficher HomePages.js et Parametres.js, dossier pages et composants */
+
+/* Se trouve dans le fichier HomePages.js */
+.FooterLeft {
+    margin-top: auto;
+}
+
+/* Se trouvant dans le fichier Parametres.js */
+.ParametresContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.ParametresContainer img {
+    width: 32px;
+    height: 32px;
+    border-radius: 20%;
+    margin-right: 12px;
+}
+
+.ParametresContainer span {
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.ParametresContainer .ParamsIcons {
+    font-size: 24px;
+    margin-left: auto;
+}
+
+.ParamsIcons {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+/* Ici le contenu de HomeDroite */
+/* Premium */
+/* Le Premium se trouve dans le fichier Premium.js du dossier composants */
+.PremiumContainer {
+    position: relative;
+    justify-content: center;
+}
+
+.PremiumCard {
+    display: flex;
+    align-items: center;
+    background-color: #008B5D;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    width: 800px;
+    height: 148px;
+}
+
+.PremiumIcon-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+    width: 72px;
+    height: 72px;
+}
+
+.PremiumIcon {
+    color: #183874;
+    font-size: 48px;
+}
+
+.PremiumContent {
+    flex: 1;
+}
+
+.PremiumTitre {
+    font-size: 24px;
+    margin-top: 0px;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.PremiumParagraph {
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+/* Personal Information, du fichier PersonalInformation.js du dossier composants */
+
+.PersonalTitle {
+    font-family: 'Gilroy-Bold';
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/* Général */
+.InformationContainer {
+    display: flex;
+}
+
+.Form-container {
+    width: 50%;
+}
+
+.profile-photo {
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10%;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Form-input {
+    position: relative;
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.Form-input input {
+    width: calc(100% - 30px);
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.Form-input label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 14px;
+    color: #333;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Champ Address spécifique */
+.Form-input.Address {
+    width: 100%;
+}
+
+.InputContainer {
+    position: relative;
+}
+
+/* Style du label lors du focus ou si le placeholder n'est pas affiché */
+.Form-input input:focus+label,
+.Form-input input:not(:placeholder-shown)+label {
+    top: -10px;
+    font-size: 12px;
+    opacity: 1;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.Form-text {
+    margin-top: 0;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 15px;
+}
+
+.save-button {
+    margin-top: 20px;
+    width: 170px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0;
+    background-color: #1688FE;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 40px;
+    cursor: pointer;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+/* Icône de vérification */
+.icon-verification {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #27CFB1;
+    font-size: 20px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Styles spécifiques pour le champ Email */
+.Form-input.Email input:focus+label,
+.Form-input.Email input:not(:placeholder-shown)+label {
+    top: -10px;
+    font-size: 12px;
+    opacity: 1;
+    background-color: white;
+    padding: 0 5px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+.Form-input.Phone input:focus+label,
+.Form-input.Phone input:not(:placeholder-shown)+label {
+    top: -10px;
+    font-size: 12px;
+    opacity: 1;
+    background-color: white;
+    padding: 0 5px;
+}
+
+/* Style du contenu texte en dessous du bouton Save */
+.TheBestContent {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    margin-top: 4%;
+}
+
+#check {
+    margin-right: 10px;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #1688FE;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+#check:checked {
+    background-color: #1688FE;
+    border-color: #1688FE;
+}
+
+.TheBestContent p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* Delete Account */
+.DeleteAccountContainer {
+    position: relative;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+.DeleteAccountCard {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #E3E3E4;
+    padding: 10px;
+    width: 800px;
+    height: 124px;
+}
+
+.DeleteAccountTitle {
+    font-size: 17px;
+    margin-top: 0px;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.DeleteAccountParagraph {
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.DeleteAccountButton {
+    color: #F25773;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+/* Support Container */
+.SupportContainer {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 4%;
+}
+
+
+/* Ligne Droite */
+.ligneDroite {
+    width: 800px;
+}
+
+/* Footer du HomeDroite dans le fichier HomePages.js */
+
+.FooterContainer {
+    margin-bottom: 2%;
+    width: 800px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.footer-links a {
+    color: #333;
+    padding-right: 4%;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Gilroy-Regular';
+    line-height: 22px;
+}
+
+.footer-links a:hover {
+    text-decoration: dimgray;
+}
