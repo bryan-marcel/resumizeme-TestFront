@@ -56,10 +56,12 @@ function PersonalInformation() {
                         </div>
                         <div className='Form-row'>
                             <div className='Form-input Email'>
-                                <div className='InputContainer'>
+                                <div className='InputContainerM'>
                                     <input type="text" placeholder=' ' />
-                                    <MdVerified className='icon-verification' />
                                     <label>Email</label>
+                                </div>
+                                <div>
+                                    <MdVerified className='icon-verification' />
                                 </div>
                             </div>
                             <div className='Form-input Phone'>

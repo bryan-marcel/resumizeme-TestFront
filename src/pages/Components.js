@@ -53,7 +53,7 @@ function Components() {
                 <p>Computer Systems Analyst</p>
             </div>
             {/* Boards */}
-            <div className='myTemplatesContainer' style={{ marginTop: '25px', marginBottom: '10px' }}>
+            <div className='myTemplatesContainer Board' style={{ marginTop: '25px', marginBottom: '10px', cursor: 'default' }}>
                 <RiArchiveDrawerLine className='templatesIcons' />
                 <p>My Boards</p>
                 <FaPlusCircle className='templateIcons' style={{ marginLeft: '50%' }} />
